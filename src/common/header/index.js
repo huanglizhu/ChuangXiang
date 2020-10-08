@@ -99,50 +99,7 @@ class Header extends Component {
     );
 
     return (
-      // <HeaderWrapper>
-      //   <Link to="/">
-      //     <Logo />
-      //   </Link>
-      //   <Nav>
-      //     <NavItem className="left active">首页</NavItem>
-      //     <NavItem className="left">下载App</NavItem>
-      //     {
-      //       login ? <NavItem className="right" onClick={logout}>退出</NavItem> :
-      //         <Link to="/login"><NavItem className="right">登录</NavItem></Link>
-      //     }
-      //     <NavItem className="right">
-      //       <span className="iconfont">&#xe636;</span>
-      //     </NavItem>
-      //     <SearchWrapper>
-      //       <CSSTransition
-      //         in={focused}
-      //         timeout={200}
-      //         classNames="slide"
-      //       >
-      //         <NavSearch
-      //           className={focused ? "focused" : ""}
-      //           onFocus={() => { handleInputFocus(list) }}
-      //           onBlur={handleInputBlur}
-      //         />
-      //       </CSSTransition>
-      //       <span className={focused ? "focused iconfont zoom" : "iconfont zoom"}>
-      //         &#xe606;
-      //         </span>
-      //       {this.getListArea()}
-      //     </SearchWrapper>
-      //   </Nav>
-      //   <Addition>
-      //     <Link to="/write">
-      //       <Button className="writting">
-      //         <span className="iconfont">&#xe6e5;</span>
-      //         写文章
-      //       </Button>
-      //     </Link>
-      //     <Button className="reg">注册</Button>
-      //   </Addition>
-      // </HeaderWrapper>
-
-      <Row style={{ position:"fixed",zIndex: 1,height:"56px",width:"100%",borderBottom:"1px solid #f0f0f0",background:"white" }}>
+      <Row align="middle" style={{ position:"fixed",zIndex: 1,height:"56px",width:"100%",borderBottom:"1px solid #f0f0f0",background:"white" }}>
         <Col xs={4} md={2}>
           <Link to="/">
             <Logo />

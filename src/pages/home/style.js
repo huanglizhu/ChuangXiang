@@ -63,7 +63,7 @@ export const ListItem = styled.div`
 `;
 
 export const ListInfo = styled.div`
-  width: 500px;
+  width: 100%;
   .title {
     line-height: 27px;
     font-size: 18px;

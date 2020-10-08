@@ -9,15 +9,16 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Logo = styled.div`
-  position:absolute;
-  display:block;
-  top:0;
-  left:0;
+  // 等比例缩放
+  width:auto;
   height:56px;
-  width:100px;
   background:url(${LogoPic});
   // contain：把x轴拉满，y轴够长的话会平铺重复显示图片
   background-size:contain;
+  background-repeat: no-repeat;
+  // 背景定位居中
+  background-position:50% 50%;
+  
 `;
 
 export const Nav = styled.div`
@@ -37,7 +38,6 @@ export const NavItem = styled.div`
     float:left;
   }
   &.right{
-    // float:right;
     float:left;
     color: #969696;
   }
@@ -52,8 +52,6 @@ export const NavSearch = styled.input.attrs({
   width: 160px;
   height: 38px;
   padding: 0 30px 0 20px;
-  margin-top:9px;
-  margin-left:20px;
   box-sizing:border-box;
   border:none;
   outline:none;
@@ -84,9 +82,6 @@ export const NavSearch = styled.input.attrs({
 `;
 
 export const Addition = styled.div`
-  position:absolute;
-  right:0;
-  top:0;
   height:56px;
 `;
 
