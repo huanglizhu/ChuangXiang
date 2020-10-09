@@ -56,9 +56,11 @@ export const ListItem = styled.div`
   border-bottom: 1px solid #dcdcdc;
   .pic {
     float: right;    
+    border-radius: 10px;
     width: 125px;
     height: 100px;
-    border-radius: 10px;
+    // 使图片不变形
+    object-fit: cover;
   }
 `;
 
