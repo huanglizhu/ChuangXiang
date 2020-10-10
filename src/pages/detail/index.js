@@ -2,19 +2,21 @@ import React, { PureComponent } from 'react';
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import {
-  DetailWrapper,
   Header,
   Content,
 } from "./style";
 import { actionCreators } from './store';
+import { Row, Col } from 'antd';
 
 class Detail extends PureComponent {
   render() {
     return (
-      <DetailWrapper>
-        <Header>{this.props.title}</Header>
-        <Content dangerouslySetInnerHTML={{ __html: this.props.content }}></Content>
-      </DetailWrapper>
+      <Row justify="center" style={{paddingBottom:"100px"}}>
+        <Col xs={22} md={12}>
+          <Header>{this.props.title}</Header>
+          <Content dangerouslySetInnerHTML={{ __html: this.props.content }}></Content>
+        </Col>
+      </Row>
     )
   };
 
