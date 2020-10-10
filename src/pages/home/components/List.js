@@ -13,30 +13,35 @@ class List extends PureComponent {
   render() {
     const { list, page, getMoreList } = this.props;
     return (
-      <Row>
-        <Col >
-          {
-            list.map((item, index) => {
-              return (
-                <Link key={index} to={"/detail/" + item.get("id")}>
-                  <ListItem>
-                    <img
-                      className="pic"
-                      src={item.get("imgUrl")}
-                      alt={item.get("title")}
-                    />
-                    <ListInfo>
-                      <h3 className="title">{item.get("title")}</h3>
-                      <p className="desc">{item.get("desc")}</p>
-                    </ListInfo>
-                  </ListItem>
-                </Link>
-              )
-            })
-          }
-          <LoadMore onClick={() => getMoreList(page)}>加载更多</LoadMore>
-        </Col>
-      </Row>
+      <Fragment>
+        {
+          list.map((item, index) => {
+            return (
+              <Link key={index} to={"/detail/" + item.get("id")}>
+                <ListItem>
+                  <Row>
+                    <Col xs={24} md={19}>
+                      <ListInfo>
+                        <h3 className="title">{item.get("title")}</h3>
+                        <p className="desc">{item.get("desc")}</p>
+                      </ListInfo>
+                    </Col>
+                    <Col xs={0} md={5}>
+                      <img
+                        className="pic"
+                        src={item.get("imgUrl")}
+                        alt={item.get("title")}
+                      />
+                    </Col>
+                  </Row>
+                </ListItem>
+              </Link>
+            )
+          })
+        }
+        <LoadMore onClick={() => getMoreList(page)}>加载更多</LoadMore>
+
+      </Fragment>
     )
   }
 }
