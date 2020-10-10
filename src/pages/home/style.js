@@ -55,15 +55,17 @@ export const ListItem = styled.div`
   padding: 20px 0;
   border-bottom: 1px solid #dcdcdc;
   .pic {
-    float: right;    
+    // float: right;    
+    border-radius: 10px;
     width: 125px;
     height: 100px;
-    border-radius: 10px;
+    // 使图片不变形
+    object-fit: cover;
   }
 `;
 
 export const ListInfo = styled.div`
-  width: 100%;
+  // width: 100%;
   .title {
     line-height: 27px;
     font-size: 18px;

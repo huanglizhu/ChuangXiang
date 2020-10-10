@@ -20,7 +20,7 @@ import {
   SearchItemList,
 } from "./style";
 import { Link } from "react-router-dom";
-import { Row, Col, Menu, Dropdown  } from 'antd';
+import { Row, Col, Menu, Dropdown } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 
 class Header extends Component {
@@ -99,14 +99,16 @@ class Header extends Component {
     );
 
     return (
-      <Row align="middle" style={{ position:"fixed",zIndex: 1,height:"56px",width:"100%",borderBottom:"1px solid #f0f0f0",background:"white" }}>
+      <Row align="middle" style={{ position: "fixed", zIndex: 1, height: "56px", width: "100%", borderBottom: "1px solid #f0f0f0", background: "white" }}>
         <Col xs={4} md={2}>
           <Link to="/">
             <Logo />
           </Link>
         </Col>
         <Col offset={1} xs={0} md={4}>
-          <NavItem className="left active">首页</NavItem>
+          <Link to="/">
+            <NavItem className="left active">首页</NavItem>
+          </Link>
           <NavItem className="left">下载App</NavItem>
         </Col>
         <Col xs={18} md={10}>
