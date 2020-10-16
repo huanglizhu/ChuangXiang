@@ -9,7 +9,7 @@ import { Row, Col   } from 'antd';
 class Topic extends PureComponent {
   render() {
     return (
-      <Row justify="space-between" gutter={{ xs: 8, md: 24}}>
+      <Row justify="space-between" gutter={{ md: 24}}>
         {/* <TopicWrapper> */}
           {
             this.props.list.map((item) => {
