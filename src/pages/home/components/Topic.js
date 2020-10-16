@@ -4,17 +4,17 @@ import {
   TopicWrapper,
   TopicItem,
 } from "../style"
-import { Row, Col } from 'antd';
+import { Row, Col   } from 'antd';
 
 class Topic extends PureComponent {
   render() {
     return (
-      <Row>
-        <Col >
-          <TopicWrapper>
-            {
-              this.props.list.map((item) => {
-                return (
+      <Row justify="space-between" gutter={{ xs: 8, md: 24}}>
+        {/* <TopicWrapper> */}
+          {
+            this.props.list.map((item) => {
+              return (
+                <Col md={4} >
                   <TopicItem key={item.get("id")}>
                     <img
                       className="topic-pic"
@@ -23,12 +23,13 @@ class Topic extends PureComponent {
                     />
                     {item.get("title")}
                   </TopicItem>
-                )
-              })
-            }
-          </TopicWrapper>
-        </Col>
+                </Col>
+              )
+            })
+          }
+        {/* </TopicWrapper> */}
       </Row>
+      
     )
   }
 }
