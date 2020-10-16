@@ -32,6 +32,7 @@ export const TopicWrapper = styled.div`
 `;
 
 export const TopicItem = styled.div`
+  width:100%;
   float: left;
   line-height: 32px;
   background: #f7f7f7;
@@ -40,7 +41,7 @@ export const TopicItem = styled.div`
   border: 1px solid #dcdcdc;
   border-radius: 4px;
   padding-right: 10px;
-  margin-left: 18px;
+  // margin-left: 18px;
   margin-bottom: 18px;
   .topic-pic{
     width: 32px;
@@ -87,7 +88,7 @@ export const RecommendWrapper = styled.div`
 export const RecommendItem = styled.div`
   width: 280px;
   height: 50px;
-  background: url(${(props)=>(props.imgUrl)});
+  background: url(${(props) => (props.imgUrl)});
   background-size: contain;
 `;
 
