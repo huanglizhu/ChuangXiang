@@ -22,6 +22,7 @@ import {
 import { Link } from "react-router-dom";
 import { Row, Col, Menu, Dropdown } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
+import { yellow } from 'color-name';
 
 class Header extends Component {
   getListArea() {
@@ -99,19 +100,21 @@ class Header extends Component {
     );
 
     return (
-      <Row align="middle" style={{ position: "fixed", zIndex: 1, height: "56px", width: "100%", borderBottom: "1px solid #f0f0f0", background: "white" }}>
+      <Row align="middle" justify="space-between" style={{ position: "fixed", zIndex: 1, height: "56px", width: "100%", borderBottom: "1px solid #f0f0f0", background: "white" }}>
         <Col xs={4} md={2}>
           <Link to="/">
             <Logo />
           </Link>
         </Col>
-        <Col offset={1} xs={0} md={4}>
+        <Col xs={0} md={{ span: 1, offset: 1 }}>
           <Link to="/">
-            <NavItem className="left active">首页</NavItem>
+            <NavItem className="active">首页</NavItem>
           </Link>
-          <NavItem className="left">下载App</NavItem>
         </Col>
-        <Col xs={18} md={10}>
+        <Col xs={0} md={{ span: 2 }}>
+          <NavItem>下载App</NavItem>
+        </Col>
+        <Col xs={18} md={9}>
           <SearchWrapper>
             <CSSTransition
               in={focused}
@@ -130,10 +133,12 @@ class Header extends Component {
             {this.getListArea()}
           </SearchWrapper>
         </Col>
-        <Col xs={0} md={3}>
+        <Col xs={0} md={1}>
           <NavItem className="right">
             <span className="iconfont">&#xe636;</span>
           </NavItem>
+        </Col>
+        <Col xs={0} md={3}>
           {
             login ? <NavItem className="right" onClick={logout}>退出</NavItem> :
               <Link to="/login"><NavItem className="right">登录</NavItem></Link>

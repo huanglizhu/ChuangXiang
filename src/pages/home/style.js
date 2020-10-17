@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeLeft = styled.div`
-  margin-left: 15px;
+  // margin-left: 15px;
   padding-top: 34px;
   .banner-img{
     width: auto;  

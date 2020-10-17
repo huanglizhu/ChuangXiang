@@ -9,7 +9,7 @@ import Topic from "./components/Topic";
 import Writer from "./components/Writer";
 import { connect } from "react-redux";
 import { actionCreators } from "./store";
-import { Row, Col  } from 'antd';
+import { Row, Col } from 'antd';
 
 class Home extends PureComponent {
   handleScrollTop() {
@@ -18,15 +18,15 @@ class Home extends PureComponent {
 
   render() {
     return (
-      <Row style={{paddingTop:"56px"}}>
-      <Col xs={22} md={{ span: 12, offset: 3 }}>
-        <HomeLeft>
-          <img className="banner-img" src="https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="banner图片" />
-          <Topic></Topic>
-          <List></List>
-        </HomeLeft>
+      <Row gutter={{ xs: 0, md: 32 }} style={{ paddingTop: "56px" }}>
+        <Col xs={{ span: 22, offset: 1 }} md={{ span: 12, offset: 3 }}>
+          <HomeLeft>
+            <img className="banner-img" src="https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="banner图片" />
+            <Topic></Topic>
+            <List></List>
+          </HomeLeft>
         </Col>
-        <Col xs={0} md={{ span: 8, offset: 1 }}>
+        <Col xs={0} md={{ span: 5 }}>
           <Recommend></Recommend>
           <Writer></Writer>
         </Col>
@@ -40,7 +40,7 @@ class Home extends PureComponent {
     this.bindEvents();
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     window.removeEventListener("scroll", this.props.changeScrollTopShow);
   }
 
