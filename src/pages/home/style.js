@@ -1,34 +1,15 @@
 import styled from "styled-components";
 
-export const HomeWrapper = styled.div`
-  overFlow: hidden;
-  width: 960px;
-  margin: 0 auto;
-`;
-
 export const HomeLeft = styled.div`
-  float: left;
-  width: 100%;
   margin-left: 15px;
-  padding-top: 30px;
+  padding-top: 34px;
   .banner-img{
     width: auto;  
     height: auto;  
     max-width: 100%;  
     max-height: 100%;  
+    border-radius: 8px;
   }
-`;
-
-export const HomeRight = styled.div`
-  float: right;
-  width: 100%;
-`;
-
-export const TopicWrapper = styled.div`
-  display: flow-root;
-  padding: 20px 0 10px 0;
-  margin-left: -18px;
-  border-bottom: 1px solid #dcdcdc;
 `;
 
 export const TopicItem = styled.div`
@@ -41,11 +22,13 @@ export const TopicItem = styled.div`
   border-radius: 4px;
   padding-right: 10px;
   margin-top: 18px;
+  cursor: pointer;
   .topic-pic{
     width: 32px;
     height: 32px;
     margin-right: 10px;
     float: left;
+    border-radius: 4px;
   }
 `;
 

@@ -1,8 +1,6 @@
 import React, { PureComponent } from 'react';
 import {
-  HomeWrapper,
   HomeLeft,
-  HomeRight,
   BackTop,
 } from "./style";
 import List from "./components/List";
@@ -21,7 +19,6 @@ class Home extends PureComponent {
   render() {
     return (
       <Row style={{paddingTop:"56px"}}>
-      {/* <HomeWrapper> */}
       <Col xs={22} md={{ span: 12, offset: 3 }}>
         <HomeLeft>
           <img className="banner-img" src="https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="banner图片" />
@@ -30,14 +27,10 @@ class Home extends PureComponent {
         </HomeLeft>
         </Col>
         <Col xs={0} md={{ span: 8, offset: 1 }}>
-        <HomeRight>
           <Recommend></Recommend>
           <Writer></Writer>
-        </HomeRight>
         </Col>
-
         {this.props.showScroll ? <BackTop onClick={this.handleScrollTop}>返回顶部</BackTop> : null}
-      {/* </HomeWrapper> */}
       </Row>
     )
   }
