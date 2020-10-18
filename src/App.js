@@ -9,7 +9,6 @@ import Write from "./pages/write";
 import store from "./store";
 import { Globalstyle } from './style';
 import { GlobalIconFontStyle } from "./statics/iconfont/iconfont";
-import { Button } from 'antd';
 
 import './App.less';
 

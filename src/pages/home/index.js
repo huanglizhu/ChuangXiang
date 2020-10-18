@@ -18,7 +18,7 @@ class Home extends PureComponent {
 
   render() {
     return (
-      <Row gutter={{ xs: 0, md: 32 }} style={{ paddingTop: "56px" }}>
+      <Row style={{ paddingTop: "56px" }}>
         <Col xs={{ span: 22, offset: 1 }} md={{ span: 12, offset: 3 }}>
           <HomeLeft>
             <img className="banner-img" src="https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="banner图片" />
@@ -26,7 +26,7 @@ class Home extends PureComponent {
             <List></List>
           </HomeLeft>
         </Col>
-        <Col xs={0} md={{ span: 5 }}>
+        <Col xs={0} md={{ span: 6, offset: 1 }} style={{paddingRight:"36px"}}>
           <Recommend></Recommend>
           <Writer></Writer>
         </Col>
