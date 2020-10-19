@@ -1,15 +1,17 @@
 import React, { PureComponent } from 'react';
 import { Row, Col } from 'antd';
-import { Avatar  } from 'antd';
-import { UserOutlined,PlusOutlined } from '@ant-design/icons';
+import { Avatar, Button } from 'antd';
+import { PlusOutlined } from '@ant-design/icons';
+import { connect } from "react-redux";
 import '../style.css';
 
 class Writer extends PureComponent {
   render() {
+    const { list } = this.props;
     return (
-      <Row justify="space-between" style={{ fontSize: "14px" }}>
-        <Col span={24}>
-          <Row justify="space-between" style={{ color: "#a69999",paddingBottom:"18px" }}>
+      <Row style={{ fontSize: "14px" }} gutter={[0, 14]}>
+        <Col span={24} >
+          <Row justify="space-between" style={{ color: "#a69999" }}>
             <Col>
               推荐作者
             </Col>
@@ -18,24 +20,40 @@ class Writer extends PureComponent {
             </Col>
           </Row>
         </Col>
-        <Col span={24} id={"writer"}>
-          <Row justify="space-between" gutter={16}>
-            <Col flex="0 1 48px" style={{ height: "50px" }}>
-              <Avatar size={48} icon={<UserOutlined />} />
+        {list.map((item, index) => {
+          return (
+            <Col span={24} id={"writer"}>
+
+              <Row justify="space-between" gutter={16} key={index} >
+                <Col flex="0 1 48px" style={{ height: "50px" }}>
+                  <Avatar size={48} src={item.get("imgUrl")} />
+                </Col>
+                <Col flex="1 1 60px">
+                  <p className="writerName">{item.get("writerName")}</p>
+                  <p>写了{item.get("totalNum")}k字 {item.get("totalLike")}k喜欢</p>
+                </Col>
+                <Col flex="0 1 50px" className="care" >
+                  <PlusOutlined />关注
             </Col>
-            <Col flex="1 1 60px">
-              <p className="writerName">作者名字</p>
-              <p>写了xxk字 xxk喜欢</p>
+              </Row>
             </Col>
-            <Col flex="0 1 50px" className="care" >
-            <PlusOutlined />关注
-            </Col>
-          </Row>
+          )
+        })}
+
+        <Col span={24}>
+          <Button block>查看全部</Button>
         </Col>
       </Row>
-
     )
   }
 }
 
-export default Writer;
+const mapState = (state) => ({
+  list: state.getIn(["home", "writerList"]),
+})
+
+const mapDispatch = (dispatch) => ({
+
+})
+
+export default connect(mapState, mapDispatch)(Writer);

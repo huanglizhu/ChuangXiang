@@ -80,6 +80,37 @@
     }, {
       "id": 4,
       "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+    }],
+    "writerList":[{
+      "id":1,
+      "imgUrl": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+      "writerName":"张三不爱吃糖",
+      "totalNum":"20",
+      "totalLike":"30"
+    },{
+      "id":2,
+      "imgUrl": "http://ww1.sinaimg.cn/large/005H7IVsgy1gjuydethqej307506idj4.jpg",
+      "writerName":"戴口罩的李四",
+      "totalNum":"88",
+      "totalLike":"66"
+    },{
+      "id":3,
+      "imgUrl": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+      "writerName":"王五忘带钥匙",
+      "totalNum":"233",
+      "totalLike":"188"
+    },{
+      "id":4,
+      "imgUrl": "https://upload.jianshu.io/users/upload_avatars/6652326/498e86b9-7067-4e96-b5f2-6438089e2da1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+      "writerName":"很努力的马六",
+      "totalNum":"111",
+      "totalLike":"333"
+    },{
+      "id":5,
+      "imgUrl": "https://upload.jianshu.io/users/upload_avatars/3136195/484e32c3504a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+      "writerName":"想不出名字的胡萝卜",
+      "totalNum":"222",
+      "totalLike":"77"
     }]
   }
 }
