@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import { connect } from "react-redux";
 import {
   RecommendWrapper,
-  RecommendItem
 } from "../style";
 
 class Recommend extends PureComponent {
@@ -12,10 +11,7 @@ class Recommend extends PureComponent {
         {
           this.props.list.map((item) => {
             return (
-              <RecommendItem
-                imgUrl={item.get("imgUrl")}
-                key={item.get("id")}
-              ></RecommendItem>
+              <img className="recommendItem-img" src={item.get("imgUrl")} alt={item.get("id")} />
             )
           })
         }

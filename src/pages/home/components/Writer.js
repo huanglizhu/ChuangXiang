@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Row, Col } from 'antd';
-import { Avatar,Button  } from 'antd';
+import { Avatar  } from 'antd';
 import { UserOutlined,PlusOutlined } from '@ant-design/icons';
 import '../style.css';
 
@@ -20,14 +20,14 @@ class Writer extends PureComponent {
         </Col>
         <Col span={24} id={"writer"}>
           <Row justify="space-between" gutter={16}>
-            <Col span={4} style={{ height: "50px" }}>
+            <Col flex="0 1 48px" style={{ height: "50px" }}>
               <Avatar size={48} icon={<UserOutlined />} />
             </Col>
-            <Col span={15}>
+            <Col flex="1 1 60px">
               <p className="writerName">作者名字</p>
               <p>写了xxk字 xxk喜欢</p>
             </Col>
-            <Col className="care" >
+            <Col flex="0 1 50px" className="care" >
             <PlusOutlined />关注
             </Col>
           </Row>
