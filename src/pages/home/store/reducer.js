@@ -6,6 +6,8 @@ const defaultState = fromJS({
   articleList: [],
   recommendList: [],
   writerList:[],
+  writerPage: 1,
+  totalWriterPage: 1,
   articlePage: 1,
   showScroll: false
 });

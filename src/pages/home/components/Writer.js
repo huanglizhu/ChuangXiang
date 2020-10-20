@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import { Row, Col } from 'antd';
 import { Avatar, Button } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
+import { PlusOutlined,SyncOutlined  } from '@ant-design/icons';
 import { connect } from "react-redux";
+import { actionCreators } from "../store";
 import '../style.css';
 
 class Writer extends PureComponent {
@@ -15,8 +16,8 @@ class Writer extends PureComponent {
             <Col>
               推荐作者
             </Col>
-            <Col>
-              换一批
+            <Col className="changeWriter">
+              <SyncOutlined />换一批
             </Col>
           </Row>
         </Col>
@@ -33,7 +34,7 @@ class Writer extends PureComponent {
                   <p>写了{item.get("totalNum")}k字 {item.get("totalLike")}k喜欢</p>
                 </Col>
                 <Col flex="0 1 50px" className="care" >
-                  <PlusOutlined />关注
+                <PlusOutlined />关注
             </Col>
               </Row>
             </Col>
