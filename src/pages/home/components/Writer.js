@@ -29,8 +29,8 @@ class Writer extends PureComponent {
             <Col>
               推荐作者
             </Col>
-            <Col className="changeWriter" onClick={() => { handleChangeWriterPage(totalWriterPage, writerPage) }}>
-              <SyncOutlined />换一批
+            <Col className="changeWriter" onClick={() => { handleChangeWriterPage(totalWriterPage, writerPage, this.spin) }}>
+              <SyncOutlined ref={(icon) => { this.spin = icon }} className="spin"/>换一批
             </Col>
           </Row>
         </Col>
@@ -69,7 +69,16 @@ const mapState = (state) => ({
 })
 
 const mapDispatch = (dispatch) => ({
-  handleChangeWriterPage(totalWriterPage, writerPage) {
+  handleChangeWriterPage(totalWriterPage, writerPage, spin) {
+    // [^0-9]匹配所有非数字字符（i不区分大小写)
+    let originAngle = spin.style.transform.replace(/[^0-9]/ig, "");
+    if (originAngle) {
+      originAngle = parseInt(originAngle, 10);
+    } else {
+      originAngle = 0;
+    }
+    spin.style.transform = "rotate(" + (originAngle + 360) + "deg)";
+
     if (writerPage < totalWriterPage) {
       dispatch(actionCreators.changeWriterPage(writerPage + 1));
     } else {

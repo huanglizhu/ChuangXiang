@@ -196,6 +196,7 @@ const mapDispatchProps = (dispatch) => {
       dispatch(actionCreators.mouseLeave());
     },
     handleChangePage(totalPage, page, spin) {
+      // [^0-9]匹配所有非数字字符（i不区分大小写)
       let originAngle = spin.style.transform.replace(/[^0-9]/ig, "");
       if (originAngle) {
         originAngle = parseInt(originAngle, 10);
