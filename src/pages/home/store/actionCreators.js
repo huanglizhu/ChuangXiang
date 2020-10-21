@@ -7,7 +7,8 @@ const changeHomeData = (result) => ({
   topicList: result.topicList,
   articleList: result.articleList,
   recommendList: result.recommendList,
-  writerList:result.writerList
+  writerList:result.writerList,
+  totalWriterPage: Math.ceil(result.writerList.length / 5)
 })
 
 const addHomeList = (list, nextPage) => ({

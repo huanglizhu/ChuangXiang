@@ -17,7 +17,8 @@ const changeHomeData = (state, action) => {
     topicList: fromJS(action.topicList),
     articleList: fromJS(action.articleList),
     recommendList: fromJS(action.recommendList),
-    writerList:fromJS(action.writerList)
+    writerList:fromJS(action.writerList),
+    totalWriterPage: fromJS(action.totalWriterPage)
   })
 }
 
