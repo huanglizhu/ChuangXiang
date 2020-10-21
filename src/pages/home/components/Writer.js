@@ -9,13 +9,13 @@ import '../style.css';
 
 class Writer extends PureComponent {
   render() {
-    const { list, page } = this.props;// 不能是list，要改成当页pageList
+    const { writerList, writerPage, totalWriterPage, handleChangeWriterPage } = this.props;// 不能是list，要改成当页pageList
     // list是immutable数组，难以操作，使用toJS()转换为普通数组
-    const newList = list.toJS();
+    const newList = writerList.toJS();
     const pageList = [];
 
     if (newList.length) {
-      for (let i = (page - 1) * 5; i < page * 5; i++) {
+      for (let i = (writerPage - 1) * 5; i < writerPage * 5; i++) {
         pageList.push(
           newList[i]
         )
@@ -29,7 +29,7 @@ class Writer extends PureComponent {
             <Col>
               推荐作者
             </Col>
-            <Col className="changeWriter">
+            <Col className="changeWriter" onClick={() => { handleChangeWriterPage(totalWriterPage, writerPage) }}>
               <SyncOutlined />换一批
             </Col>
           </Row>
@@ -63,13 +63,19 @@ class Writer extends PureComponent {
 }
 
 const mapState = (state) => ({
-  list: state.getIn(["home", "writerList"]),
-  page: state.getIn(["home", "writerPage"]),
-
+  writerList: state.getIn(["home", "writerList"]),
+  writerPage: state.getIn(["home", "writerPage"]),
+  totalWriterPage: state.getIn(["home", "totalWriterPage"]),
 })
 
 const mapDispatch = (dispatch) => ({
-
+  handleChangeWriterPage(totalWriterPage, writerPage) {
+    if (writerPage < totalWriterPage) {
+      dispatch(actionCreators.changeWriterPage(writerPage + 1));
+    } else {
+      dispatch(actionCreators.changeWriterPage(1));
+    }
+  }
 })
 
 export default connect(mapState, mapDispatch)(Writer);

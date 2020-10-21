@@ -5,7 +5,7 @@ const defaultState = fromJS({
   topicList: [],
   articleList: [],
   recommendList: [],
-  writerList:[],
+  writerList: [],
   writerPage: 1,
   totalWriterPage: 1,
   articlePage: 1,
@@ -17,7 +17,7 @@ const changeHomeData = (state, action) => {
     topicList: fromJS(action.topicList),
     articleList: fromJS(action.articleList),
     recommendList: fromJS(action.recommendList),
-    writerList:fromJS(action.writerList),
+    writerList: fromJS(action.writerList),
     totalWriterPage: fromJS(action.totalWriterPage)
   })
 }
@@ -37,6 +37,8 @@ export default (state = defaultState, action) => {
       return addArticleList(state, action);
     case constants.TOGGLE_SCROLL_TOP:
       return state.set("showScroll", action.show);
+    case constants.CHANGE_WRITER_PAGE:
+      return state.set("writerPage", action.writerPage);
     default:
       return state;
   }

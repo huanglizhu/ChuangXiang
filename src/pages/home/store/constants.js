@@ -2,3 +2,5 @@ export const CHANGE_HOME_DATA = "home/change_home_data";
 export const ADD_HOME_LIST = "home/add_home_list";
 export const TOGGLE_SCROLL_TOP = "home/toggle_scroll_top";
 export const ADD_WRITER_LIST = "home/add_writer_list";
+export const CHANGE_WRITER_PAGE = "home/change_writer_page";
+

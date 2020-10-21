@@ -39,3 +39,8 @@ export const toggleTopShow = (show) => ({
   type: constants.TOGGLE_SCROLL_TOP,
   show
 })
+
+export const changeWriterPage = (writerPage) => ({
+  type: constants.CHANGE_WRITER_PAGE,
+  writerPage
+});
