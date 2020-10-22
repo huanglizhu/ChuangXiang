@@ -6,7 +6,9 @@ const changeHomeData = (result) => ({
   type: constants.CHANGE_HOME_DATA,
   topicList: result.topicList,
   articleList: result.articleList,
-  recommendList: result.recommendList
+  recommendList: result.recommendList,
+  writerList:result.writerList,
+  totalWriterPage: Math.ceil(result.writerList.length / 5)
 })
 
 const addHomeList = (list, nextPage) => ({
@@ -37,3 +39,8 @@ export const toggleTopShow = (show) => ({
   type: constants.TOGGLE_SCROLL_TOP,
   show
 })
+
+export const changeWriterPage = (writerPage) => ({
+  type: constants.CHANGE_WRITER_PAGE,
+  writerPage
+});

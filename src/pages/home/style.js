@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeLeft = styled.div`
-  margin-left: 15px;
+  // margin-left: 15px;
   padding-top: 34px;
   .banner-img{
     width: auto;  
@@ -63,17 +63,16 @@ export const ListInfo = styled.div`
 
 export const RecommendWrapper = styled.div`
   margin: 30px 0;
-  width: 280px;
-`;
-
-export const RecommendItem = styled.div`
   // width: 280px;
   width: 100%;
-  min-height: 50px;
-  background: url(${(props) => (props.imgUrl)});
-  background-size: contain;
-  margin-bottom: 6px;
+  .recommendItem-img{
+    width: auto;  
+    height: auto;  
+    max-width: 100%;  
+    max-height: 100%; 
+  }
 `;
+
 
 export const WriterWrapper = styled.div`
   width: 278px;
