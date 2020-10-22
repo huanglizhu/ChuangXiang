@@ -22,7 +22,6 @@ import {
 import { Link } from "react-router-dom";
 import { Row, Col, Menu, Dropdown } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
-import { yellow } from 'color-name';
 
 class Header extends Component {
   getListArea() {
