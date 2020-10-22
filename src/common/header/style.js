@@ -45,7 +45,8 @@ export const NavItem = styled.div`
 export const NavSearch = styled.input.attrs({
   placeholder: "搜索"
 })`
-  width: 160px;
+  // width: 160px;
+  width: 40%;
   height: 38px;
   padding: 0 30px 0 20px;
   box-sizing:border-box;
@@ -59,21 +60,24 @@ export const NavSearch = styled.input.attrs({
     color: #999;    
   }
   &.focused{
-    width:240px;
+    // width:240px;
+    width:80%;
   }
   // 入场动画
   &.slide-enter{
     transition: all .2s ease-out;
   }
   &.slide-enter-active{
-    width:240px;
+    // width:240px;
+    width:80%;
   }
   // 出场动画
   &.slide-exit{
     transition: all .2s ease-out;
   }
   .slide-exit-active{
-    width:160px;
+    // width:160px;
+    width:40%;
   }
 `;
 
@@ -100,11 +104,13 @@ export const Button = styled.div`
 `;
 
 export const SearchWrapper = styled.div`
+width:100%;
   position: relative;
   float:left;
   .zoom{
     position: absolute;
-    right:5px;
+    // right:5px;
+    right:60%;
     bottom:5px;
     width:30px;
     line-height:30px;
@@ -113,6 +119,7 @@ export const SearchWrapper = styled.div`
     &.focused{
       background: #777;
       color: #fff;
+    right:20%;
     }
   }
 `;

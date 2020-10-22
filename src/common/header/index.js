@@ -113,6 +113,7 @@ class Header extends Component {
         <Col xs={0} md={{ span: 2 }}>
           <NavItem>下载App</NavItem>
         </Col>
+        {/* 搜索框 */}
         <Col xs={18} md={9}>
           <SearchWrapper>
             <CSSTransition
