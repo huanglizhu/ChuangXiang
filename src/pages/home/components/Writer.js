@@ -4,7 +4,6 @@ import { Avatar, Button } from 'antd';
 import { PlusOutlined, SyncOutlined } from '@ant-design/icons';
 import { connect } from "react-redux";
 import { actionCreators } from "../store";
-import { fromJS } from "immutable";
 import '../style.css';
 
 class Writer extends PureComponent {
@@ -74,9 +73,10 @@ const mapDispatch = (dispatch) => ({
     let originAngle = spin.style.transform.replace(/[^0-9]/ig, "");
     if (originAngle) {
       originAngle = parseInt(originAngle, 10);
-    } else {
+    } else {// 如无则给初始角度0
       originAngle = 0;
     }
+    // 第一次点击360度，第二次720度...配合transition实现动画效果
     spin.style.transform = "rotate(" + (originAngle + 360) + "deg)";
 
     if (writerPage < totalWriterPage) {
