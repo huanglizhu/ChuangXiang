@@ -133,7 +133,7 @@ export const WriterWrapper = styled.div`
   & .spin{
   transition: all .2s ease-in;
   font-size: 12px;
-  padding-right:4px; 
+  margin-right:4px; 
   }
 `;
 
