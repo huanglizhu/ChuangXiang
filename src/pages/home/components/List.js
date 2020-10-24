@@ -19,7 +19,7 @@ class List extends PureComponent {
             return (
               <Link key={index} to={"/detail/" + item.get("id")}>
                 <ListItem>
-                  <Row justify="space-between">
+                  <Row justify="space-between" gutter="8">
                     <Col xs={24} md={19}>
                       <ListInfo>
                         <h3 className="title">{item.get("title")}</h3>
