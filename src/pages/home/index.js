@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import {
   HomeLeft,
   BackTop,
+  homeWrapper,
+  homeRight,
 } from "./style";
 import List from "./components/List";
 import Recommend from "./components/Recommend";
@@ -20,7 +22,7 @@ class Home extends PureComponent {
     return (
       <Row justify="center">
         <Col flex="0 1 1248px">
-          <Row style={{ paddingTop: "56px" }} justify="center" >
+          <Row style={homeWrapper} justify="center" >
             <Col xs={{ span: 22 }} md={{ span: 12 }}>
               <HomeLeft>
                 <img className="banner-img" src="https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="banner图片" />
@@ -28,7 +30,7 @@ class Home extends PureComponent {
                 <List></List>
               </HomeLeft>
             </Col>
-            <Col xs={0} md={{ span: 6, offset: 1 }} style={{ paddingRight: "36px" }}>
+            <Col xs={0} md={{ span: 6, offset: 1 }} style={homeRight}>
               <Recommend></Recommend>
               <Writer></Writer>
             </Col>

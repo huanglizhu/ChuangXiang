@@ -73,15 +73,6 @@ export const RecommendWrapper = styled.div`
   }
 `;
 
-
-export const WriterWrapper = styled.div`
-  width: 278px;
-  border: 1px solid #dcdcdc;
-  border-radius: 3px;
-  line-height: 300px;
-  text-align: center;
-`;
-
 export const LoadMore = styled.div`
   width: 100%;
   line-height: 40px;
@@ -104,3 +95,52 @@ export const BackTop = styled.div`
   font-size: 14px;
   cursor: pointer;
 `;
+
+export const WriterItem = styled.div`
+  & .ant-row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  & .ant-col:first-child {
+    padding-left: 0 !important;
+  }
+  & .ant-col:last-child {
+    padding-right: 0 !important;
+  }
+  & .care{
+    padding: 8px 0;
+    color: #42c02e;
+    cursor: pointer;
+  }
+`;
+
+export const WriterName = styled.div`
+  padding: 8px 0;
+  &+p{
+    font-size: 12px;
+    color: #969696;
+  }
+`;
+
+export const WriterWrapper = styled.div`
+  font-size: 14px;
+  & .recommendWriter { 
+    color: #a69999;
+  }
+  & .changeWriter{
+    cursor: pointer;
+  }
+  & .spin{
+  transition: all .2s ease-in;
+  font-size: 12px;
+  padding-right:4px; 
+  }
+`;
+
+export const homeWrapper = {
+  paddingTop: "56px"
+}
+
+export const homeRight = {
+  paddingRight: "36px"
+}

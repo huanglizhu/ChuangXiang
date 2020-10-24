@@ -4,7 +4,7 @@ import { Avatar, Button } from 'antd';
 import { PlusOutlined, SyncOutlined } from '@ant-design/icons';
 import { connect } from "react-redux";
 import { actionCreators } from "../store";
-import '../style.css';
+import { WriterItem,WriterName,WriterWrapper } from "../style"
 
 class Writer extends PureComponent {
   render() {
@@ -22,33 +22,35 @@ class Writer extends PureComponent {
     }
 
     return (
-      <Row style={{ fontSize: "14px" }} gutter={[0, 14]}>
+      <WriterWrapper>
+      <Row gutter={[0, 14]}>
         <Col span={24} >
-          <Row justify="space-between" style={{ color: "#a69999" }}>
+          <Row justify="space-between" className="recommendWriter">
             <Col>
               推荐作者
             </Col>
             <Col className="changeWriter" onClick={() => { handleChangeWriterPage(totalWriterPage, writerPage, this.spin) }}>
-              <SyncOutlined ref={(icon) => { this.spin = icon }} className="spin"/>换一批
+              <SyncOutlined ref={(icon) => { this.spin = icon }} className="spin" />换一批
             </Col>
           </Row>
         </Col>
         {pageList.map((item, index) => {
           return (
-            <Col span={24} id={"writer"}>
-
+            <Col span={24}>
+            <WriterItem>
               <Row justify="space-between" gutter={16} key={index} >
                 <Col flex="0 1 48px" style={{ height: "50px" }}>
                   <Avatar size={48} src={item.imgUrl} />
                 </Col>
                 <Col flex="1 1 60px">
-                  <p className="writerName">{item.writerName}</p>
+                  <WriterName>{item.writerName}</WriterName>
                   <p>写了{item.totalNum}k字 {item.totalLike}k喜欢</p>
                 </Col>
                 <Col flex="0 1 50px" className="care" >
                   <PlusOutlined />关注
             </Col>
               </Row>
+            </WriterItem>
             </Col>
           )
         })}
@@ -57,6 +59,7 @@ class Writer extends PureComponent {
           <Button block>查看全部</Button>
         </Col>
       </Row>
+      </WriterWrapper>
     )
   }
 }
