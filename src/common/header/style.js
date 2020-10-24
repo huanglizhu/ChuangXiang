@@ -110,7 +110,7 @@ width:100%;
   .zoom{
     position: absolute;
     // right:5px;
-    right:60%;
+    right:61%;
     bottom:5px;
     width:30px;
     line-height:30px;
@@ -119,7 +119,7 @@ width:100%;
     &.focused{
       background: #777;
       color: #fff;
-    right:20%;
+    right:21%;
     }
   }
 `;
@@ -128,7 +128,8 @@ export const SearchInfo = styled.div`
   position: absolute;
   left: 0;
   top: 56px;
-  width: 240px; 
+  // width: 240px; 
+  width: 80%; 
   padding:0 20px;
   box-shadow:0 0 8px rgba(0, 0, 0, .2);
   background: #fff;
