@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.dab277ab.chunk.css",
-    "main.js": "./static/js/main.9465e473.chunk.js",
-    "main.js.map": "./static/js/main.9465e473.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.175f09a4.js",
-    "runtime-main.js.map": "./static/js/runtime-main.175f09a4.js.map",
-    "static/js/2.cea655ff.chunk.js": "./static/js/2.cea655ff.chunk.js",
-    "static/js/2.cea655ff.chunk.js.map": "./static/js/2.cea655ff.chunk.js.map",
-    "static/js/3.ff6af4c9.chunk.js": "./static/js/3.ff6af4c9.chunk.js",
-    "static/js/3.ff6af4c9.chunk.js.map": "./static/js/3.ff6af4c9.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.3b2cdc1071bbbbc39d5518c445713060.js": "./precache-manifest.3b2cdc1071bbbbc39d5518c445713060.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.dab277ab.chunk.css.map": "./static/css/main.dab277ab.chunk.css.map",
-    "static/js/2.cea655ff.chunk.js.LICENSE.txt": "./static/js/2.cea655ff.chunk.js.LICENSE.txt"
+    "main.css": "/ChuangXiang/static/css/main.dab277ab.chunk.css",
+    "main.js": "/ChuangXiang/static/js/main.9465e473.chunk.js",
+    "main.js.map": "/ChuangXiang/static/js/main.9465e473.chunk.js.map",
+    "runtime-main.js": "/ChuangXiang/static/js/runtime-main.e3bec5e7.js",
+    "runtime-main.js.map": "/ChuangXiang/static/js/runtime-main.e3bec5e7.js.map",
+    "static/js/2.dcc1a2aa.chunk.js": "/ChuangXiang/static/js/2.dcc1a2aa.chunk.js",
+    "static/js/2.dcc1a2aa.chunk.js.map": "/ChuangXiang/static/js/2.dcc1a2aa.chunk.js.map",
+    "static/js/3.ff6af4c9.chunk.js": "/ChuangXiang/static/js/3.ff6af4c9.chunk.js",
+    "static/js/3.ff6af4c9.chunk.js.map": "/ChuangXiang/static/js/3.ff6af4c9.chunk.js.map",
+    "index.html": "/ChuangXiang/index.html",
+    "precache-manifest.d0f3f83c0d54024198f9790623a3e3aa.js": "/ChuangXiang/precache-manifest.d0f3f83c0d54024198f9790623a3e3aa.js",
+    "service-worker.js": "/ChuangXiang/service-worker.js",
+    "static/css/main.dab277ab.chunk.css.map": "/ChuangXiang/static/css/main.dab277ab.chunk.css.map",
+    "static/js/2.dcc1a2aa.chunk.js.LICENSE.txt": "/ChuangXiang/static/js/2.dcc1a2aa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.175f09a4.js",
-    "static/js/2.cea655ff.chunk.js",
+    "static/js/runtime-main.e3bec5e7.js",
+    "static/js/2.dcc1a2aa.chunk.js",
     "static/css/main.dab277ab.chunk.css",
     "static/js/main.9465e473.chunk.js"
   ]
