@@ -31,7 +31,7 @@ class Home extends PureComponent {
               </HomeLeft>
             </Col>
             <Col xs={0} md={{ span: 6, offset: 1 }} style={homeRight}>
-              <Recommend></Recommend>
+              {/* <Recommend></Recommend> */}
               <Writer></Writer>
             </Col>
             {this.props.showScroll ? <BackTop onClick={this.handleScrollTop}>返回顶部</BackTop> : null}

@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
 export const Logo = styled.div`
   // 等比例缩放
   width:auto;
-  height:56px;
+  height:52px;
   background:url(${LogoPic});
   // contain：把x轴拉满，y轴够长的话会平铺重复显示图片
   background-size:contain;
@@ -46,7 +46,7 @@ export const NavSearch = styled.input.attrs({
   placeholder: "搜索"
 })`
   // width: 160px;
-  width: 40%;
+  width: 50%;
   height: 38px;
   padding: 0 30px 0 20px;
   box-sizing:border-box;
@@ -61,7 +61,7 @@ export const NavSearch = styled.input.attrs({
   }
   &.focused{
     // width:240px;
-    width:80%;
+    width:89%;
   }
   // 入场动画
   &.slide-enter{
@@ -69,7 +69,7 @@ export const NavSearch = styled.input.attrs({
   }
   &.slide-enter-active{
     // width:240px;
-    width:80%;
+    width:89%;
   }
   // 出场动画
   &.slide-exit{
@@ -77,7 +77,7 @@ export const NavSearch = styled.input.attrs({
   }
   .slide-exit-active{
     // width:160px;
-    width:40%;
+    width:50%;
   }
 `;
 
@@ -110,7 +110,7 @@ width:100%;
   .zoom{
     position: absolute;
     // right:5px;
-    right:61%;
+    right:52%;
     bottom:5px;
     width:30px;
     line-height:30px;
@@ -119,7 +119,7 @@ width:100%;
     &.focused{
       background: #777;
       color: #fff;
-    right:21%;
+      right:12%;
     }
   }
 `;

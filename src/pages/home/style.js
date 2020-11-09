@@ -85,6 +85,7 @@ export const LoadMore = styled.div`
 `;
 
 export const BackTop = styled.div`
+  background:white;
   position: fixed;
   right: 50px;
   bottom: 100px;
@@ -123,6 +124,7 @@ export const WriterName = styled.div`
 `;
 
 export const WriterWrapper = styled.div`
+  margin-top:34px;
   font-size: 14px;
   & .recommendWriter { 
     color: #a69999;
