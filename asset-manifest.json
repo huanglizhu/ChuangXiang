@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ChuangXiang/static/css/main.dab277ab.chunk.css",
-    "main.js": "/ChuangXiang/static/js/main.9465e473.chunk.js",
-    "main.js.map": "/ChuangXiang/static/js/main.9465e473.chunk.js.map",
+    "main.js": "/ChuangXiang/static/js/main.f161b4e5.chunk.js",
+    "main.js.map": "/ChuangXiang/static/js/main.f161b4e5.chunk.js.map",
     "runtime-main.js": "/ChuangXiang/static/js/runtime-main.e3bec5e7.js",
     "runtime-main.js.map": "/ChuangXiang/static/js/runtime-main.e3bec5e7.js.map",
     "static/js/2.dcc1a2aa.chunk.js": "/ChuangXiang/static/js/2.dcc1a2aa.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.ff6af4c9.chunk.js": "/ChuangXiang/static/js/3.ff6af4c9.chunk.js",
     "static/js/3.ff6af4c9.chunk.js.map": "/ChuangXiang/static/js/3.ff6af4c9.chunk.js.map",
     "index.html": "/ChuangXiang/index.html",
-    "precache-manifest.d0f3f83c0d54024198f9790623a3e3aa.js": "/ChuangXiang/precache-manifest.d0f3f83c0d54024198f9790623a3e3aa.js",
+    "precache-manifest.519874247cf0b27e850b8a97403aa9cb.js": "/ChuangXiang/precache-manifest.519874247cf0b27e850b8a97403aa9cb.js",
     "service-worker.js": "/ChuangXiang/service-worker.js",
     "static/css/main.dab277ab.chunk.css.map": "/ChuangXiang/static/css/main.dab277ab.chunk.css.map",
     "static/js/2.dcc1a2aa.chunk.js.LICENSE.txt": "/ChuangXiang/static/js/2.dcc1a2aa.chunk.js.LICENSE.txt"
@@ -19,6 +19,6 @@
     "static/js/runtime-main.e3bec5e7.js",
     "static/js/2.dcc1a2aa.chunk.js",
     "static/css/main.dab277ab.chunk.css",
-    "static/js/main.9465e473.chunk.js"
+    "static/js/main.f161b4e5.chunk.js"
   ]
 }
