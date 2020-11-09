@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.dab277ab.chunk.css",
-    "main.js": "/static/js/main.5ea5eab2.chunk.js",
-    "main.js.map": "/static/js/main.5ea5eab2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1a0ff76b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1a0ff76b.js.map",
-    "static/js/2.d0c41465.chunk.js": "/static/js/2.d0c41465.chunk.js",
-    "static/js/2.d0c41465.chunk.js.map": "/static/js/2.d0c41465.chunk.js.map",
-    "static/js/3.ddb4a4bf.chunk.js": "/static/js/3.ddb4a4bf.chunk.js",
-    "static/js/3.ddb4a4bf.chunk.js.map": "/static/js/3.ddb4a4bf.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d03a12ba1e4fb7513b911fecbbef38df.js": "/precache-manifest.d03a12ba1e4fb7513b911fecbbef38df.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.dab277ab.chunk.css.map": "/static/css/main.dab277ab.chunk.css.map",
-    "static/js/2.d0c41465.chunk.js.LICENSE.txt": "/static/js/2.d0c41465.chunk.js.LICENSE.txt"
+    "main.css": "/huanglizhu.git/static/css/main.dab277ab.chunk.css",
+    "main.js": "/huanglizhu.git/static/js/main.5ea5eab2.chunk.js",
+    "main.js.map": "/huanglizhu.git/static/js/main.5ea5eab2.chunk.js.map",
+    "runtime-main.js": "/huanglizhu.git/static/js/runtime-main.9350fe3e.js",
+    "runtime-main.js.map": "/huanglizhu.git/static/js/runtime-main.9350fe3e.js.map",
+    "static/js/2.f7e1aaba.chunk.js": "/huanglizhu.git/static/js/2.f7e1aaba.chunk.js",
+    "static/js/2.f7e1aaba.chunk.js.map": "/huanglizhu.git/static/js/2.f7e1aaba.chunk.js.map",
+    "static/js/3.ddb4a4bf.chunk.js": "/huanglizhu.git/static/js/3.ddb4a4bf.chunk.js",
+    "static/js/3.ddb4a4bf.chunk.js.map": "/huanglizhu.git/static/js/3.ddb4a4bf.chunk.js.map",
+    "index.html": "/huanglizhu.git/index.html",
+    "precache-manifest.787ba72b0b271da1cc26603f4a28fe96.js": "/huanglizhu.git/precache-manifest.787ba72b0b271da1cc26603f4a28fe96.js",
+    "service-worker.js": "/huanglizhu.git/service-worker.js",
+    "static/css/main.dab277ab.chunk.css.map": "/huanglizhu.git/static/css/main.dab277ab.chunk.css.map",
+    "static/js/2.f7e1aaba.chunk.js.LICENSE.txt": "/huanglizhu.git/static/js/2.f7e1aaba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a0ff76b.js",
-    "static/js/2.d0c41465.chunk.js",
+    "static/js/runtime-main.9350fe3e.js",
+    "static/js/2.f7e1aaba.chunk.js",
     "static/css/main.dab277ab.chunk.css",
     "static/js/main.5ea5eab2.chunk.js"
   ]
