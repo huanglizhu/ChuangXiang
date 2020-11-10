@@ -8,7 +8,9 @@ const changeLogin = () => ({
 
 export const login = (account, password) => {
   return (dispatch) => {
-    axios.get("/api/login.json?account=" + account + "&password" + password).then((res) => {
+    let getUrl = process.env.NODE_ENV === 'production' ? "/ChuangXiang/api/login.json?account=" : "/api/login.json?account=";
+    axios.get(getUrl + account + "&password" + password).then((res) => {
+    // axios.get("/api/login.json?account=" + account + "&password" + password).then((res) => {
       const result = res.data.data;
       if (result) {
         dispatch(changeLogin());

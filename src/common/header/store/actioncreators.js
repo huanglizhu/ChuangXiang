@@ -31,7 +31,13 @@ export const changePage = (page) => ({
 
 export const getList = () => {
   return (dispatch) => {
-    axios.get("/api/headerList.json").then((res) => {
+    // let getUrl="/api/headerList.json";
+    // if(process.env.NODE_ENV === 'production'){
+    //   getUrl="/ChuangXiang/api/headerList.json"
+    // }
+    // axios.get(getUrl).then((res) => {
+    let getUrl = process.env.NODE_ENV === 'production' ? "/ChuangXiang/api/headerList.json" : "/api/headerList.json";
+    axios.get(getUrl).then((res) => {
       const data = res.data;
       dispatch(changeList(data.data));
     }).catch(() => {

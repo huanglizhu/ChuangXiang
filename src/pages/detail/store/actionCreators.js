@@ -11,7 +11,9 @@ const changeDetail = (title, content) => {
 
 export const getDetail = (id) => {
   return (dispatch) => {
-    axios.get("/api/detail.json?id=" + id).then((res) => {
+    // axios.get("/api/detail.json?id=" + id).then((res) => {
+    let getUrl = process.env.NODE_ENV === 'production' ? "/ChuangXiang/api/detail.json?id=" : "/api/detail.json?id=";
+    axios.get(getUrl + id).then((res) => {
       const result = res.data.data;
       dispatch(changeDetail(result.title, result.content))
     }).catch(() => {
