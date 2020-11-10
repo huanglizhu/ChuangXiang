@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 // import 'antd/dist/antd.css';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/ChuangXiang">
     <App />
   </BrowserRouter>,
   document.getElementById('root'));
