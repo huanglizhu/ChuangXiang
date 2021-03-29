@@ -9,7 +9,7 @@
       },
       {
         "id": 2,
-        "title": "战疫",
+        "title": "抗疫",
         "imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3579593474,3059798518&fm=26&gp=0.jpg"
       },
       {
@@ -21,14 +21,16 @@
         "id": 4,
         "title": "编程",
         "imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2858483685,2605438292&fm=26&gp=0.jpg"
+      },
       {
         "id": 5,
         "title": "美食",
         "imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3775377771,2785791254&fm=26&gp=0.jpg"
+      },
       {
         "id": 6,
         "title": "生活",
-        "imgUrl": "https://upload.jianshu.io/users/upload_avatars/3136195/484e32c3504a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
+        "imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2233955640,1194186878&fm=26&gp=0.jpg"
       },
       {
         "id": 7,
